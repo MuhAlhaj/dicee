@@ -26,17 +26,11 @@ public class MainActivity extends AppCompatActivity {
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-
                 Random randomNumberGerrator = new Random();
                 int number = randomNumberGerrator.nextInt(6);
                 int number2 = randomNumberGerrator.nextInt(6);
-
                 leftDice.setImageResource(diceArray[number]);
                 rightDice.setImageResource(diceArray[number2]);
-
             }
         });
 
